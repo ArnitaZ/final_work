@@ -5,13 +5,14 @@ import Footer from "./Components/Footer";
 function App() {
   return (
     <div>
-      <div>
+      <div className="container-fluid d-flex flex-column min-vh-100">
         <Header />
-        <div>
-          <Content />
-        </div>
+
+        <Content />
       </div>
-      <Footer />
+      <div>
+        <Footer />
+      </div>
     </div>
   );
 }

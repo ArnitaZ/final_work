@@ -7,7 +7,7 @@ import Registration from "../Pages/Registration";
 
 function Content() {
   return (
-    <div className="container-fluid">
+    <div>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/articles" element={<Articles />} />

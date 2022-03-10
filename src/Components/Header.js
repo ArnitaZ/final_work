@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 function Header() {
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-light">
+    <nav className="navbar fixed-top navbar-expand-lg navbar-light bg-light">
       <div className="container-fluid">
         <div
           className="collapse navbar-collapse justify-content-end mx-5"
@@ -11,7 +11,7 @@ function Header() {
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <Link
               to="/"
-              className="col-md-1 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none"
+              className="col-md-1 d-flex justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none"
             >
               <img
                 src="/images/logo_v2.png"

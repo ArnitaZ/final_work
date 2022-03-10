@@ -1,27 +1,27 @@
 function Carousel() {
   return (
-    <div className="row item-align-center">
+    <div className="col justify-content-center">
       <div
         id="carouselExampleFade"
-        class="carousel slide carousel-fade item-align-center"
+        class="carousel slide carousel-fade justify-content-center"
         data-bs-ride="carousel"
       >
-        <div class="carousel-inner ">
-          <div class="carousel-item item-align-center active">
+        <div class="carousel-inner">
+          <div class="carousel-item justify-content-center active">
             <img
               src="/images/IMG-1.jpg"
               class="d-block w-80 align-items-center"
               alt="winter sea landscape with swans"
             />
           </div>
-          <div class="carousel-item">
+          <div class="carousel-item justify-content-center">
             <img
               src="/images/IMG-2.jpg"
               class="d-block w-80 align-items-center"
               alt="winter scene"
             />
           </div>
-          <div class="carousel-item">
+          <div class="carousel-item justify-content-center">
             <img
               src="/images/IMG-3.jpg"
               class="d-block w-80"
@@ -30,7 +30,7 @@ function Carousel() {
           </div>
         </div>
         <button
-          class="carousel-control-prev"
+          class="carousel-control-prev justify-content-center"
           type="button"
           data-bs-target="#carouselExampleFade"
           data-bs-slide="prev"
