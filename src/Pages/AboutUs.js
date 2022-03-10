@@ -1,4 +1,4 @@
 function AboutUs() {
-  return <div></div>;
+  return <div>this is aboutus</div>;
 }
 export default AboutUs;

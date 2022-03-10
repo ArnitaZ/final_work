@@ -1,4 +1,4 @@
 function Registration() {
-  return <div></div>;
+  return <div>This is registration</div>;
 }
 export default Registration;

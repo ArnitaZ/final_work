@@ -1,4 +1,4 @@
-function Article() {
-  return <div></div>;
+function Articles() {
+  return <div>This is article</div>;
 }
-export default Article;
+export default Articles;

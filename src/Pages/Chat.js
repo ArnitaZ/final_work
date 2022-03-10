@@ -1,4 +1,4 @@
 function Chat() {
-  return <div></div>;
+  return <div>This is chat</div>;
 }
 export default Chat;
