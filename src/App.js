@@ -7,7 +7,7 @@ function App() {
     <div>
       <div>
         <Header />
-        <div className="ps-0 ps-md-5 flex-grow-1">
+        <div>
           <Content />
         </div>
       </div>
