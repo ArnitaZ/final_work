@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 function Card() {
   return (
     <div>
-      <div className="album py-5">
+      <div className="album py-5 ">
         <div className="container">
           <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
             <div className="col">
@@ -88,7 +88,7 @@ function Card() {
                   />
                 </svg>{" "}
                 <div className="card-body align-items-center">
-                  <h4 className="card-text">Weding</h4>
+                  <h4 className="card-text">Wedding</h4>
                   <div className="d-flex justify-content-between align-items-center">
                     <div className="btn-group">
                       <Link

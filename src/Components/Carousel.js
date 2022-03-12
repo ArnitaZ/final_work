@@ -1,6 +1,6 @@
 function Carousel() {
   return (
-    <div className="col justify-content-center">
+    <div className="container">
       <div
         id="carouselExampleFade"
         class="carousel slide carousel-fade justify-content-center"
@@ -10,21 +10,35 @@ function Carousel() {
           <div class="carousel-item justify-content-center active">
             <img
               src="/images/IMG-1.jpg"
-              class="d-block w-80 align-items-center"
+              class="d-block w-100 align-items-center"
               alt="winter sea landscape with swans"
             />
           </div>
           <div class="carousel-item justify-content-center">
             <img
               src="/images/IMG-2.jpg"
-              class="d-block w-80 align-items-center"
+              class="d-block w-100 align-items-center"
               alt="winter scene"
             />
           </div>
           <div class="carousel-item justify-content-center">
             <img
-              src="/images/IMG-3.jpg"
-              class="d-block w-80"
+              src="/images/IMG-6.jpg"
+              class="d-block w-100"
+              alt="winter sea landscape"
+            />
+          </div>
+          <div class="carousel-item justify-content-center">
+            <img
+              src="/images/IMG-4.jpg"
+              class="d-block w-100"
+              alt="winter sea landscape"
+            />
+          </div>
+          <div class="carousel-item justify-content-center">
+            <img
+              src="/images/IMG-5.jpg"
+              class="d-block w-100"
               alt="winter sea landscape"
             />
           </div>

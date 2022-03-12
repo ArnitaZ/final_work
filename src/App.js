@@ -7,7 +7,6 @@ function App() {
     <div>
       <div className="container-fluid d-flex flex-column min-vh-100">
         <Header />
-
         <Content />
       </div>
       <div>
