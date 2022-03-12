@@ -1,7 +1,38 @@
+import { useState } from "react";
+import getArticlesData from "../API/getArticlesData";
 import { Link } from "react-router-dom";
-import ArticlesList from "../Components/ArticlesList";
 
 function Articles() {
+  const [article] = useState(getArticlesData());
+  const [filter, setFilter] = useState("");
+
+  const searchText = (event) => {
+    setFilter(event.target.value);
+  };
+
+  let dataSearch = article.filter((item) => {
+    return Object.keys(item).some((key) =>
+      item[key]
+        .toString()
+        .toLowerCase()
+        .includes(filter.toString().toLowerCase())
+    );
+  });
+
+  const articlesRow = dataSearch.map((article, index) => {
+    const borderStyle = "1px solid rgba(1, 1, 1, 1)";
+
+    return (
+      <div className="container article-row article-container justify-content-center mt-1">
+        <div className="row" key={index}>
+          <div className="col-2">{article.coverImg}</div>
+          <div className="col-2">{article.title}</div>
+          <div className="col-7 ">{article.description}</div>
+          <div className="col-1">{article.datePublished}</div>
+        </div>
+      </div>
+    );
+  });
   return (
     <div>
       <div className="col mt-3 mb-4">
@@ -16,7 +47,21 @@ function Articles() {
           </ol>
         </nav>
       </div>
-      <div className="col">
+      <form className="d-flex">
+        <input
+          className="form-control me-2"
+          type="search"
+          placeholder="Search"
+          aria-label="Search"
+          value={filter}
+          onChange={searchText.bind(this)}
+        />
+        <button className="btn btn-sm" type="submit">
+          Search
+        </button>
+      </form>
+      <div>{articlesRow}</div>
+      {/* <div className="col">
         <div className="col d-flex mb-5 fill">
           <Link
             to="/articleC"
@@ -64,7 +109,7 @@ function Articles() {
             description="All brides know that wedding photos are one of the most important parts of the wedding day, so coming up with a must-have wedding photo list should be high on your wedding planning priorities. These are the memories you'll cherish forever and even look back on the very next day (It goes by in a flash, they all say). That's why you want to make sure your photographer nails every photo-op, starting with the getting ready photos all the way through to your (sparkler) exit. Step one to checking off this to-do list is to hire a wedding photographer you're excited about—and put your trust in the professional. You are hiring just that—a professional—who should know what they're doing, after all. They'll have an idea of the must-have wedding shots, but even so, it's nice to have some general knowledge of wedding photography yourself. As your 101 guide, we put together a wedding photo list of the must-have moments to capture—from the pretty detailed shot of your wedding day jewels to the table settings and invitation suite."
           />
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }

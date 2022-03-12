@@ -16,7 +16,7 @@ function Header() {
               <img
                 src="/images/logo_v2.png"
                 className="d-block"
-                height="60px"
+                height="45px"
                 display="center"
                 alt="photocamera"
               />
