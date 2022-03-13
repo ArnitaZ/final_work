@@ -44,7 +44,7 @@ a:hover {
   background: #eee;
   width: 1200px;
   max-width: 100%;
-  border: 2px solid #212121;
+  border: 2px solid #afa49c;
   border-radius: 4px;
 }
 
@@ -67,10 +67,10 @@ a:hover {
   background: #fff;
   height: 500px;
   width: 1000px;
-  border: 1px solid black;
+  border: 1px solid #afa49c;
   overflow: auto;
   border-radius: 4px;
-  border-bottom: 4px solid black;
+  border-bottom: 4px solid #afa49c;
 }
 
 #usermsg {
@@ -87,14 +87,20 @@ a:hover {
 
 #submitmsg,
 #enter {
-  background: linear-gradient(to top, #ffff 5%, gold 95%);
-  border: non;
+  background: linear-gradient(to bottom, #ffff 15%, #eee3a8 95%);
+  border: none;
   color: black;
   padding: 4px 10px;
   font-weight: bold;
   border-radius: 4px;
 }
-
+.btn {
+  background: linear-gradient(to bottom, #ffff 15%, #eee3a8 95%);
+  border: solid;
+}
+.btn-group {
+  background: none;
+}
 .error {
   color: #ff0000;
 }

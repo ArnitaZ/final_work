@@ -1,6 +1,7 @@
 import { useState } from "react";
 import getArticlesData from "../API/getArticlesData";
 import { Link } from "react-router-dom";
+import { hover } from "@testing-library/user-event/dist/hover";
 
 function Articles() {
   const [article] = useState(getArticlesData());
@@ -112,6 +113,7 @@ function Articles() {
               onClick={() => moveLeft(startList)}
               type="button"
               class="btn btn-outline-secondary"
+              style={{ background: "white", border: "none", color: "darkgrey" }}
             >
               «
             </button>
@@ -119,6 +121,7 @@ function Articles() {
               onClick={() => changePageOne(startList)}
               type="button"
               class="btn btn-outline-secondary"
+              style={{ background: "white", border: "none", color: "darkgrey" }}
             >
               1
             </button>
@@ -126,6 +129,7 @@ function Articles() {
               onClick={() => changePageTwo(startList)}
               type="button"
               class="btn btn-outline-secondary"
+              style={{ background: "white", border: "none", color: "darkgrey" }}
             >
               2
             </button>
@@ -133,6 +137,7 @@ function Articles() {
               onClick={() => changePageThree(startList)}
               type="button"
               class="btn btn-outline-secondary"
+              style={{ background: "white", border: "none", color: "darkgrey" }}
             >
               3
             </button>
@@ -140,6 +145,7 @@ function Articles() {
               onClick={() => moveRight(startList)}
               type="button"
               class="btn btn-outline-secondary"
+              style={{ background: "white", border: "none", color: "darkgrey" }}
             >
               »
             </button>
