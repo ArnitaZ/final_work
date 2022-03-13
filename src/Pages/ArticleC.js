@@ -14,7 +14,7 @@ function ArticleC() {
               <Link to="/articles">Articles</Link>
             </li>
             <li class="breadcrumb-item active" aria-current="page">
-              Article Couples
+              Couples Photo Session
             </li>
           </ol>
         </nav>

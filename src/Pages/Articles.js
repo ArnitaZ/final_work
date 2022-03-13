@@ -1,7 +1,6 @@
 import { useState } from "react";
 import getArticlesData from "../API/getArticlesData";
 import { Link } from "react-router-dom";
-import { hover } from "@testing-library/user-event/dist/hover";
 
 function Articles() {
   const [article] = useState(getArticlesData());
@@ -56,8 +55,8 @@ function Articles() {
             <div className="col-2">
               <img
                 src={article.coverImg}
-                style={{ width: "100px" }}
                 className="img-thumbnail"
+                width="300"
                 alt="landmark"
               />
             </div>
@@ -69,6 +68,7 @@ function Articles() {
             </div>
             <div className="col-1">{article.datePublished}</div>
           </div>
+          <hr />
         </div>
       );
     });

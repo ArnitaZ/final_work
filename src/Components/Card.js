@@ -8,7 +8,10 @@ function Card() {
         <div className="container">
           <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
             <div className="col">
-              <div className="card shadow-sm align-items-center">
+              <div
+                className="card shadow-sm align-items-center"
+                style={{ border: "none" }}
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"
@@ -42,7 +45,10 @@ function Card() {
               </div>
             </div>
             <div className="col">
-              <div className="card shadow-sm align-items-center">
+              <div
+                className="card shadow-sm align-items-center"
+                style={{ border: "none" }}
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"
@@ -74,7 +80,10 @@ function Card() {
               </div>
             </div>
             <div className="col">
-              <div className="card shadow-sm align-items-center">
+              <div
+                className="card shadow-sm align-items-center"
+                style={{ border: "none" }}
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"

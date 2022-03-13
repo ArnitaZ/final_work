@@ -5,7 +5,6 @@ import Articles from "../Pages/Articles";
 import Chat from "../Pages/Chat";
 import Home from "../Pages/Home";
 import Registration from "../Pages/Registration";
-import "../Components/Main.css";
 
 function Content() {
   return (

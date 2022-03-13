@@ -5,11 +5,16 @@
 p {
   text-align: justify;
 }
-h4 {
-  color: #283835;
+.card-text {
+  color: #203f3a;
+  justify-content: center;
+  text-align: center;
 }
 body {
-  margin-top: 30pt;
+  margin-top: 50pt;
+}
+hr {
+  color: #203f3a;
 }
 
 form {
@@ -23,18 +28,14 @@ form label {
   font-size: 1.5rem;
   font-weight: bold;
 }
-
-input {
-  font-family: "monospace";
-}
-
 a {
-  color: #0000ff;
+  color: #203f3a;
   text-decoration: none;
 }
 
 a:hover {
   text-decoration: underline;
+  background-color: #eee3a8;
 }
 
 #wrapper,
@@ -46,17 +47,6 @@ a:hover {
   max-width: 100%;
   border: 2px solid #afa49c;
   border-radius: 4px;
-}
-
-#loginform {
-  padding-top: 18px;
-  text-align: center;
-}
-
-#loginform p {
-  padding: 15px 25px;
-  font-size: 1.4rem;
-  font-weight: bold;
 }
 
 #chatbox {
@@ -77,12 +67,6 @@ a:hover {
   flex: 1;
   border-radius: 4px;
   border: 1px solid black;
-}
-
-#name {
-  border-radius: 4px;
-  border: 1px solid gold;
-  padding: 2px 8px;
 }
 
 #submitmsg,
@@ -116,37 +100,8 @@ a:hover {
 
 a#exit {
   color: white;
-  background: #283835;
+  background: #203f3a;
   padding: 4px 8px;
   border-radius: 4px;
   font-weight: bold;
-}
-
-.msgln {
-  margin: 0 0 5px 0;
-}
-
-.msgln span.left-info {
-  color: #e7d6f7;
-}
-
-.msgln span.chat-time {
-  color: #666;
-  font-size: 60%;
-  vertical-align: super;
-}
-
-.msgln b.user-name,
-.msgln b.user-name-left {
-  font-weight: bold;
-  background: #546e7a;
-  color: white;
-  padding: 2px 4px;
-  font-size: 90%;
-  border-radius: 4px;
-  margin: 0 5px 0 0;
-}
-
-.msgln b.user-name-left {
-  background: #e7d6f7;
 }

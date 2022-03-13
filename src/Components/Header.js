@@ -14,7 +14,7 @@ function Header() {
               className="col-md-1 d-flex justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none"
             >
               <img
-                src="/images/logo_v2.png"
+                src="/images/logo.png"
                 className="d-block"
                 height="45px"
                 display="center"
