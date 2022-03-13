@@ -19,24 +19,61 @@ function Articles() {
     );
   });
 
-  const articlesRow = dataSearch.map((article, index) => {
-    return (
-      <div className="container article-row article-container justify-content-center mt-1">
-        <div className="row" key={index}>
-          <div className="col-2">{article.coverImg}</div>
-          <div className="col-2">{article.title}</div>
-          <div className="col-7 ">{article.description}</div>
-          <div className="col-1">{article.datePublished}</div>
+  const [startList, setStartList] = useState(0);
+  const endList = startList + 3;
+
+  const moveLeft = () => {
+    let nextSelected = startList - 3;
+    if (nextSelected < 0) {
+      nextSelected = 0;
+    }
+    setStartList(nextSelected);
+  };
+  const moveRight = () => {
+    let nextSelected = startList + 3;
+    if (nextSelected > 10) {
+      nextSelected = 10;
+    }
+    setStartList(nextSelected);
+  };
+  const changePageOne = () => {
+    setStartList(0);
+  };
+  const changePageTwo = () => {
+    setStartList(3);
+  };
+  const changePageThree = () => {
+    setStartList(6);
+  };
+
+  const articlesList = dataSearch
+    .slice(startList, endList)
+    .map((article, index) => {
+      return (
+        <div className="container article-row article-container justify-content-center mt-1">
+          <div className="row" key={index}>
+            <div className="col-2">
+              <img
+                src={article.coverImg}
+                style={{ width: "100px" }}
+                className="img-thumbnail"
+                alt="landmark"
+              />
+            </div>
+
+            <div className="col-2">{article.title}</div>
+
+            <div className="col-7" style={{ textAlign: "justify" }}>
+              {article.description}
+            </div>
+            <div className="col-1">{article.datePublished}</div>
+          </div>
         </div>
-      </div>
-    );
-  });
+      );
+    });
   return (
     <div>
-      <br />
-      <br />
-      <br />
-      <div className="row">
+      <div className="row ps-0 ps-md-5">
         <div className="col-2 mt-3 mb-4 d-flex flex-column">
           <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
@@ -50,7 +87,7 @@ function Articles() {
           </nav>
         </div>
         <div className="col-8 mt-3 mb-4 d-flex flex-column"></div>
-        <div className="col-2 d-flex flex-column">
+        <div className="col-2 mt-3 mb-4 d-flex flex-column">
           <form className="d-flex">
             <input
               className="form-control me-2"
@@ -63,7 +100,52 @@ function Articles() {
           </form>
         </div>
       </div>
-      <div>{articlesRow}</div>
+      <div>{articlesList}</div>
+      <div className="row">
+        <div className="col">
+          <div
+            className="btn-group float-end"
+            role="group"
+            aria-label="Basic outlined example"
+          >
+            <button
+              onClick={() => moveLeft(startList)}
+              type="button"
+              class="btn btn-outline-secondary"
+            >
+              «
+            </button>
+            <button
+              onClick={() => changePageOne(startList)}
+              type="button"
+              class="btn btn-outline-secondary"
+            >
+              1
+            </button>
+            <button
+              onClick={() => changePageTwo(startList)}
+              type="button"
+              class="btn btn-outline-secondary"
+            >
+              2
+            </button>
+            <button
+              onClick={() => changePageThree(startList)}
+              type="button"
+              class="btn btn-outline-secondary"
+            >
+              3
+            </button>
+            <button
+              onClick={() => moveRight(startList)}
+              type="button"
+              class="btn btn-outline-secondary"
+            >
+              »
+            </button>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

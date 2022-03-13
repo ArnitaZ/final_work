@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import "../Components/Main.css";
 
 function Card() {
   return (
@@ -28,7 +29,7 @@ function Card() {
                   <div className="d-flex justify-content-between">
                     <div className="btn-group">
                       <Link
-                        to="/categories"
+                        to="/articleC"
                         className="btn btn-sm btn-outline-secondary"
                         role="button"
                         aria-disabled="true"
@@ -60,7 +61,7 @@ function Card() {
                   <div className="d-flex justify-content-between align-items-center">
                     <div className="btn-group">
                       <Link
-                        to="/categories"
+                        to="/articleC"
                         className="btn btn-sm btn-outline-secondary"
                         role="button"
                         aria-disabled="true"
@@ -86,13 +87,13 @@ function Card() {
                     fill-rule="evenodd"
                     d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"
                   />
-                </svg>{" "}
+                </svg>
                 <div className="card-body align-items-center">
                   <h4 className="card-text">Wedding</h4>
                   <div className="d-flex justify-content-between align-items-center">
                     <div className="btn-group">
                       <Link
-                        to="/categories"
+                        to="articleC"
                         className="btn btn-sm btn-outline-secondary"
                         role="button"
                         aria-disabled="true"
