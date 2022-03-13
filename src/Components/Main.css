@@ -17,24 +17,20 @@ body {
 hr {
   color: #203f3a;
 }
-
 form {
   padding: 15px 25px;
   display: flex;
   gap: 10px;
   justify-content: center;
 }
-
 a {
   color: #203f3a;
   text-decoration: none;
 }
-
 a:hover {
   text-decoration: underline;
   background-color: #eee3a8;
 }
-
 #wrapper,
 #loginform {
   margin: 0 auto;
@@ -45,7 +41,6 @@ a:hover {
   border: 2px solid #afa49c;
   border-radius: 4px;
 }
-
 #chatbox {
   text-align: left;
   margin: 0 auto;
@@ -59,13 +54,11 @@ a:hover {
   border-radius: 4px;
   border-bottom: 4px solid #afa49c;
 }
-
 #usermsg {
   flex: 1;
   border-radius: 4px;
   border: 1px solid black;
 }
-
 #submitmsg,
 #enter {
   background: linear-gradient(to bottom, #ffff 15%, #eee3a8 95%);
@@ -82,19 +75,13 @@ a:hover {
 .btn-group {
   background: none;
 }
-.error {
-  color: #ff0000;
-}
-
 #menu {
   padding: 15px 25px;
   display: flex;
 }
-
 #menu p.welcome {
   flex: 1;
 }
-
 a#exit {
   color: white;
   background: #203f3a;
