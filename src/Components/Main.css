@@ -31,6 +31,10 @@ a:hover {
   text-decoration: underline;
   background-color: #eee3a8;
 }
+.nav-link:hover {
+  text-decoration: underline;
+  background-color: #eee3a8;
+}
 #wrapper,
 #loginform {
   margin: 0 auto;

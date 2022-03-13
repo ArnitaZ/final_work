@@ -29,6 +29,11 @@ function AboutUs() {
                 role="tab"
                 aria-controls="profile"
                 aria-selected="false"
+                style={{
+                  background:
+                    "linear-gradient(to bottom, #ffff 15%, #eee3a8 95%)",
+                  color: "grey",
+                }}
               >
                 Contacts
               </btn>
@@ -43,6 +48,11 @@ function AboutUs() {
                 role="tab"
                 aria-controls="contact"
                 aria-selected="false"
+                style={{
+                  background:
+                    "linear-gradient(to bottom, #ffff 15%, #eee3a8 95%)",
+                  color: "grey",
+                }}
               >
                 Free Time
               </button>
