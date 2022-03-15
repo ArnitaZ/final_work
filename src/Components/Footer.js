@@ -6,7 +6,7 @@ function Footer() {
       <div className="row align-items-center justify-content-center">
         <div className="col-2"></div>
         <div className="col-4">
-          <ul className="nav list-unstyled d-flex mt-4">
+          <ul className="nav list-unstyled d-flex mt-4 mb-3">
             <li className="ms-3">
               © 2022 Company, FotoTev Inc. by<strong> Arnita Zarina </strong>
             </li>
