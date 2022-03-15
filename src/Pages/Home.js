@@ -1,11 +1,11 @@
 import Card from "../Components/Card";
-import Carousel from "../Components/Carousel";
+import CarouselHome from "../Components/CarouselHome";
 import "../Components/Main.css";
 
 function Home() {
   return (
     <div>
-      <Carousel />
+      <CarouselHome />
       <Card />
     </div>
   );

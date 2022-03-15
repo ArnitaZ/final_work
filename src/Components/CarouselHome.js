@@ -1,4 +1,4 @@
-function Carousel() {
+function CarouselHome() {
   return (
     <div className="container">
       <div
@@ -71,4 +71,4 @@ function Carousel() {
     </div>
   );
 }
-export default Carousel;
+export default CarouselHome;
