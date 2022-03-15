@@ -6,7 +6,7 @@ import "../Components/Main.css";
 function AboutUs() {
   return (
     <div>
-      <div className="row ps-0 ps-md-5">
+      <div className="row">
         <div>
           <p className="subsequence">
             <span>
@@ -15,20 +15,19 @@ function AboutUs() {
             </span>
             <span id="lastSubsequenceColor">About Us</span>
           </p>
-          <div className="row"></div>
         </div>
-        <div>
+        <div className="row ps-0 ps-md-5">
           <ul className="nav nav-tabs" role="tablist">
             <li className="nav-item" role="presentation">
-              <btn
+              <button
                 className="nav-link"
-                id="profile-tab"
+                id="home-tab"
                 data-bs-toggle="tab"
-                data-bs-target="#profile"
+                data-bs-target="#home"
                 type="button"
                 role="tab"
-                aria-controls="profile"
-                aria-selected="false"
+                aria-controls="home"
+                aria-selected="true"
                 style={{
                   background:
                     "linear-gradient(to bottom, #ffff 15%, #eee3a8 95%)",
@@ -36,17 +35,17 @@ function AboutUs() {
                 }}
               >
                 Contacts
-              </btn>
+              </button>
             </li>
             <li className="nav-item" role="presentation">
               <button
                 className="nav-link"
-                id="contact-tab"
+                id="freeTime-tab"
                 data-bs-toggle="tab"
-                data-bs-target="#contact"
+                data-bs-target="#freeTime"
                 type="button"
                 role="tab"
-                aria-controls="contact"
+                aria-controls="freeTime"
                 aria-selected="false"
                 style={{
                   background:
@@ -60,18 +59,18 @@ function AboutUs() {
           </ul>
           <div className="tab-content" id="myTabContent">
             <div
-              className="tab-pane fade"
-              id="contact"
+              className="tab-pane fade show active"
+              id="home"
               role="tabpanel"
-              aria-labelledby="contact-tab"
+              aria-labelledby="home-tab"
             >
               <ContactsTab />
             </div>
             <div
               className="tab-pane fade"
-              id="address"
+              id="freeTime"
               role="tabpanel"
-              aria-labelledby="address-tab"
+              aria-labelledby="freeTime-tab"
             >
               <FreeTimeTab />
             </div>

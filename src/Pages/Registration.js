@@ -13,18 +13,6 @@ function Registration() {
     return email.length > 0 && pass1.length > 0;
   }
 
-  function formSubmit(event) {
-    let pass = document.getElementById("pass1").value;
-    let repass = document.getElementById("pass2").value;
-
-    if (pass !== repass) {
-      alert("Passwords must match!");
-      return false;
-    } else {
-      alert("Passwords match");
-      return true;
-    }
-  }
   function handleSubmit(event) {
     event.preventDefault();
   }
@@ -50,8 +38,8 @@ function Registration() {
               value={pass1}
               onChange={(e) => setPassword(e.target.value)}
               required
-              minlength="8"
-              onSubmit={formSubmit}
+              minLength="8"
+              onSubmit={handleSubmit}
             />
             <br />
             <Form.Control
@@ -60,7 +48,7 @@ function Registration() {
               value={pass2}
               onChange={(e) => setPswRepeat(e.target.value)}
               required
-              onSubmit={formSubmit}
+              onSubmit={handleSubmit}
             />
             <br />
             <Form.Control
@@ -76,11 +64,10 @@ function Registration() {
               placeholder="Enter Last name"
               value={lastName}
               onChange={(e) => setLastName(e.target.value)}
-              optional
             />
             <br />
-            <label for="country" class="form-label"></label>
-            <select id="country" class="text-muted form-select" required>
+            <label htmlFor="country" className="form-label"></label>
+            <select id="country" className="text-muted form-select" required>
               <option selected disabled value>
                 Country*
               </option>
@@ -109,7 +96,7 @@ function Registration() {
         </div>
         <label>
           <input type="checkbox" value="remember-me" />
-          {""} Remember me
+          {""}Remember me
         </label>
         <div className="col signin">
           <p>

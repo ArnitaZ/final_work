@@ -77,11 +77,11 @@ function Articles() {
       <div className="row ps-0 ps-md-5">
         <div className="col-2 mt-3 mb-4 d-flex flex-column">
           <nav aria-label="breadcrumb">
-            <ol class="breadcrumb">
-              <li class="breadcrumb-item">
+            <ol className="breadcrumb">
+              <li className="breadcrumb-item">
                 <Link to="/">Home</Link>
               </li>
-              <li class="breadcrumb-item active" aria-current="page">
+              <li className="breadcrumb-item active" aria-current="page">
                 Articles
               </li>
             </ol>
@@ -112,7 +112,7 @@ function Articles() {
             <button
               onClick={() => moveLeft(startList)}
               type="button"
-              class="btn btn-outline-secondary"
+              className="btn btn-outline-secondary"
               style={{ background: "white", border: "none", color: "darkgrey" }}
             >
               «
@@ -120,7 +120,7 @@ function Articles() {
             <button
               onClick={() => changePageOne(startList)}
               type="button"
-              class="btn btn-outline-secondary"
+              className="btn btn-outline-secondary"
               style={{ background: "white", border: "none", color: "darkgrey" }}
             >
               1
@@ -128,7 +128,7 @@ function Articles() {
             <button
               onClick={() => changePageTwo(startList)}
               type="button"
-              class="btn btn-outline-secondary"
+              className="btn btn-outline-secondary"
               style={{ background: "white", border: "none", color: "darkgrey" }}
             >
               2
@@ -136,15 +136,15 @@ function Articles() {
             <button
               onClick={() => changePageThree(startList)}
               type="button"
-              class="btn btn-outline-secondary"
+              className="btn btn-outline-secondary"
               style={{ background: "white", border: "none", color: "darkgrey" }}
             >
               3
             </button>
             <button
-              onClick={() => moveRight(startList)}
+              onClick={() => moveRight(endList)}
               type="button"
-              class="btn btn-outline-secondary"
+              className="btn btn-outline-secondary"
               style={{ background: "white", border: "none", color: "darkgrey" }}
             >
               »
